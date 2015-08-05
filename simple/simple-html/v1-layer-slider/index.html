@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">  
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />    
+    <title>Lemap - Distribuidora auto-peças</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="lib/images/favicon.png">
+    <meta name="description" content="">
+    <meta name="author" content="">
+        
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="lib/css/ie.css" type="text/css" media="screen" /><![endif]-->
+
+    <!-- CSS concatenated and minified via ant build script-->
+    <link rel="stylesheet" href="lib/css/style.css">
+    <link rel="stylesheet" href="lib/css/fonts.css">
+    <link rel="stylesheet" href="lib/css/ie.css">
+    <link rel="stylesheet" href="lib/css/animate.css">
+    <link rel="stylesheet" href="lib/css/layerslider.css">
+    <link rel="stylesheet" href="lib/css/owl.carousel.css">
+    <link rel="stylesheet" href="lib/css/owl.theme.css">
+    <link rel="stylesheet" href="lib/js/prettyPhoto/css/prettyPhoto.css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <!-- end CSS-->
+    
+    <script src="lib/js/jquery-1.11.1.min.js"></script>
+    <script src="lib/js/jquery-migrate-1.2.1.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(-22.9306067,-43.0659334),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    
+</head>
+
+<body>
+
+    <!--begin container -->
+    <div id="container">
+         
+        <!--begin header_wrapper -->
+        <header id="header_wrapper">
+            
+            <!--begin header -->    
+            <div id="header" class="clearfix">
+            
+                <!--begin row -->
+                <div class="row">
+                    
+                    <!--begin logo -->            
+                    <a href="index.html" id="logo"><img src="lib/images/lemapLogoPequena.png"></a>
+                    <!--end logo -->
+    
+                    <!--begin nav -->
+                    <nav id="navigation" role="navigation">
+                        <ul id="nav">
+                            <li>
+                                <a href="#container">Home</a>
+                            </li>
+                            
+                           
+                            <li>
+                                <a href="#about">A Empresa</a>
+                            </li>
+                            <li>
+                                <a href="#blog">Produtos</a>
+                            </li>
+                             <li>
+                                <a href="#orçamento">Orçamento online</a>
+                            </li>
+                           
+                            <li>
+                                <a href="#local">Onde estamos</a>
+                            </li>
+                            <li class="last">
+                                <a href="#contact">Fale Conosco</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--end nav -->
+                    
+                </div>
+                <!--end row -->
+                
+            </div>
+            <!--end header -->
+            
+        </header>
+        <!--end header_wrapper -->
+        
+        <!--begin slider-wrapper -->
+        <section id="slider-wrapper">
+        
+            <!--begin layerslider -->
+            <div id="layerslider" style="width:1140px;height:580px;max-width: 1140px; margin:0 auto;">
+                            
+                <!--begin ls-slide 
+                <div class="ls-slide" data-ls="slidedelay:8000;transition2d:21,105;timeshift:-1000;">
+                    
+                    <img class="ls-l" style="top:80px;left:50%;white-space: nowrap;" data-ls="durationin:1500;scalexin:0.8;scaleyin:0.8;scalexout:0.8;scaleyout:0.8;" src="lib/images/lemapLogoFundo.png" alt="">
+                    
+                    <h2 class="ls-l" style="top:90px;left:0px;font-weight: 300; height:42px;font-size:42px;line-height:42px;color:#fff;white-space: nowrap;" data-ls="offsetxin:-50;durationin:2000;delayin:1000;offsetxout:-50;durationout:1000;">
+                        ARREFECIMENTO E ILUMINAÇÃO
+                    </h2>
+                    
+                    <p class="ls-l" style="top:155px;left:0;font-weight: 300;font-size:22px; line-height:32px;color:#ebf8fc;white-space: nowrap;" data-ls="offsetxin:50;delayin:2000;skewxin:-60;offsetxout:-50;durationout:1000;skewxout:-60;">
+                       Mais de 40 anos de qualidade para você<br>
+                        
+                    </p>
+                    
+                    <a href="#" class="ls-l" style="top:280px; left:0;" data-ls="offsetxin:0;durationin:2500;delayin:3250;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% top 0;offsetxout:0;durationout:1000;rotatexout:90;transformoriginout:50% bottom 0;">
+                        <span style="background-color: #fff; color:#454545; display:inline-block;font-weight:400; font-size:15px; line-height:15px; vertical-align:top; padding:13px 20px 11px 20px;margin:0 0 20px 0;-webkit-border-radius: 3px 3px;-moz-border-radius: 3px 3px;border-radius: 3px 3px;white-space: nowrap;">
+                            <i class="icon icon-apple"></i> &nbsp; Read More
+                        </span>
+                    </a>
+                    
+                </div>
+                <!--end ls-slide -->
+                            
+                <!--begin ls-slide -->
+                <div class="ls-slide" data-ls="slidedelay:8000;transition2d:21,105;timeshift:-1000;">
+                    
+                    <!--<img class="ls-l" style="top:120px;left:40%;white-space: nowrap;" data-ls="durationin:1500; delayin:900; scalexin:0.8; scaleyin:0.8; scalexout:0.8; scaleyout:0.8;" src="lib/images/ls4.png" alt="">-->
+                    
+                    <img class="ls-l" style="top:-2px;left:25%;white-space: nowrap;" data-ls="durationin:1500; scalexin:0.8; scaleyin:0.8; scalexout:0.8; scaleyout:0.8;" src="lib/images/carroBackground.png" alt="">
+                    
+                    <!--<img class="ls-l" style="top:320px;left:8%;white-space: nowrap;" data-ls="offsetxin:0; offsetyin:100; durationin:2000; delayin:300; offsetxout:-100; offsetyout:50; durationout:2000;" src="lib/images/ls2.png" alt="">
+                    
+                    <img class="ls-l" style="top:240px;left:40%;white-space: nowrap;" data-ls="offsetxin:0; durationin:1500; delayin:600; rotateyin:90; transformoriginin:right 50% 0; offsetxout:0; durationout:1500; rotateyout:-90; transformoriginout:right 50% 0;" src="lib/images/ls3.png" alt="">
+                    
+                    <img class="ls-l" style="top:82px;left:47%;white-space: nowrap;" data-ls="durationin:1500; delayin:1200; scalexin:0.8; scaleyin:0.8; scalexout:0.8; scaleyout:0.8;" src="lib/images/ls5.png" alt="">
+                    
+                    <img class="ls-l" style="top:82px;left:42%;white-space: nowrap;" data-ls="durationin:1500; delayin:1500; scalexin:0.8; scaleyin:0.8; scalexout:0.8; scaleyout:0.8;" src="lib/images/ls6.png" alt="">
+                    
+                    <img class="ls-l" style="top:75px;left:20%;white-space: nowrap;" data-ls="durationin:1500; delayin:1800; scalexin:0.8; scaleyin:0.8; scalexout:0.8; scaleyout:0.8;" src="lib/images/ls7.png" alt="">-->
+                    
+                    <!--<p class="ls-l" style="top:70px;left:715px;opacity: .3; font-weight: 300;font-size:150px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:0;durationin:2000;delayin:3500;easingin:linear;scalexin:0;scaleyin:0;offsetxout:0;durationout:2000;showuntil:1;easingout:linear;scalexout:2;scaleyout:2;">
+					&amp;
+                    </p>-->
+                    
+                    <h1 class="ls-l" style="top:125px;left:635px;font-weight: 300;font-size:38px;line-height:40px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:50;durationin:3000;delayin:2300;rotateyin:60;transformoriginin:right 50% 0;offsetxout:-50;durationout:3000;rotateyout:-60;transformoriginout:left 50% 0;">ARREFECIMENTO E <BR>ILUMINAÇÃO</h1>
+                    
+                    <!--<h2 class="ls-l" style="top:170px;left:635px;font-weight: 500;font-size:30px;color:#286e89;white-space: nowrap;" data-ls="offsetxin:-50;durationin:3000;delayin:2800;rotateyin:-60;transformoriginin:left 50% 0;offsetxout:50;durationout:3000;rotateyout:60;transformoriginout:right 50% 0;">mobile ready template</h2>-->
+                    
+                    <p class="ls-l" style="top:230px;left:635px;font-weight: 300;font-size:22px; line-height:32px;color:#ebf8fc;white-space: nowrap;" data-ls="offsetxin:50;delayin:4000;skewxin:-60;offsetxout:-50;durationout:1000;skewxout:-60;">
+                        Mais de 40 anos de qualidade para você<br>
+                        Qualidade de entrega e prazo garantidos<br>
+                        Trabalhamos com as melhores marcas do mercado
+                    </p>
+                    
+                    <img class="ls-l" style="top:365px;left:635px;opacity: .75;width:60px;white-space: nowrap;" data-ls="offsetxin:-50;delayin:4500;rotatein:90;scalexin:3;scaleyin:3;transformoriginin:25% 25% 0;offsetxout:-50;rotateout:90;scalexout:0.5;scaleyout:0.5;" src="lib/images/magnetLogo.png" alt="">
+                    
+                    <img class="ls-l" style="top:365px;left:715px;opacity: .75;width:60px;white-space: nowrap;" data-ls="offsetxin:-50;delayin:4700;rotatein:90;scalexin:3;scaleyin:3;transformoriginin:25% 25% 0;offsetxout:-50;rotateout:90;scalexout:0.5;scaleyout:0.5;" src="lib/images/densoLogo.png" alt="">
+                    
+                    <img class="ls-l" style="top:365px;left:795px;opacity: .75;width:60px;white-space: nowrap;" data-ls="offsetxin:-50;delayin:4900;rotatein:90;scalexin:3;scaleyin:3;transformoriginin:25% 25% 0;offsetxout:-50;rotateout:90;scalexout:0.5;scaleyout:0.5;" src="lib/images/artebLogo.png" alt="">
+                    
+                    <img class="ls-l" style="top:365px;left:875px;opacity: .75;width:60px;white-space: nowrap;" data-ls="offsetxin:-50;delayin:5100;rotatein:90;scalexin:3;scaleyin:3;transformoriginin:25% 25% 0;offsetxout:-50;rotateout:90;scalexout:0.5;scaleyout:0.5;" src="lib/images/behrLogo.png" alt="">
+                        
+                    <img class="ls-l" style="top:365px;left:955px;opacity: .75;width:60px;white-space: nowrap;" data-ls="offsetxin:-50;delayin:5300;rotatein:90;scalexin:3;scaleyin:3;transformoriginin:25% 25% 0;offsetxout:-50;rotateout:90;scalexout:0.5;scaleyout:0.5;" src="lib/images/valeoLogo.png" alt="">
+                                
+                </div>
+                <!--end ls-slide -->
+                
+            </div>
+            <!--end layerslider -->
+            
+        </section>
+        <!--end slider-wrapper -->
+        
+        
+        
+        
+       
+        <!--begin about -->
+        <section id="about">
+            
+            <!--begin section_wrapper -->
+            <div class="section_wrapper">
+            <!--begin call_to_action_dark_wrapper -->
+            <div class="call_to_action_white_wrapper">
+                
+                <!--begin call_to_action_grey -->
+                <div class="call_to_action_white">
+                    <h3 class="left_fade">Na lemap você pode confiar</h3>
+                    <div class="separator_wrapper bounce_fade">
+                        <div class="separator_first_circle">
+                            <div class="separator_second_circle_grey">
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="right_fade">Trabalhamos “sob medida” para você aliando comprometimento, qualidade e sempre buscando alternativas mais eficazes que atendam às necessidades dos nossos clientes.</h4>
+                </div>
+                <!--end call_to_action_grey -->
+                    
+            </div>
+            <!--end call_to_action_dark_wrapper -->
+
+                
+                <!--begin section_box -->
+                <div class="section_box">
+
+                  
+                    <!--begin row -->
+                    <div class="row">
+                        
+                        <!--begin twelvecol -->
+                        <div class="twelvecol">
+                        
+                            <!--begin fivecol -->
+                            <div class="fivecol left_fade">
+                                
+                                <img src="lib/images/lemapLogo.gif" alt="picture">
+                                
+                            </div>
+                            <!--end fivecol -->
+                            
+                            <!--begin sevencol -->
+                            <div class="sevencol last padding_top right_fade">
+                                
+                                                                
+                                <p>A LEMAP teve origem em 2008 através do Miguel Angelo, fundador da empresa, que possui mais de 40 anos de experiência no Mercado de Peças Automotivas. Atuamos no segmento de Distribuição de Peças Automotivas com foco nos componentes e acessórios de refrigeração e ar condicionado de automóveis nacionais e importados.<br><br>
+                                Com sede em Niterói e atuação em todo o estado do Rio de Janeiro, a LEMAP é uma empresa
+                                de origem familiar que vem crescendo ao longo dos anos através de um trabalho sério, focado
+                                na qualidade de atendimento aos clientes e compromisso com nossos fornecedores.<br><br>
+                                Trabalhamos com uma frota de veículos própria para garantirmos qualidade e prazo de
+                                entrega que atenda às necessidades dos clientes.
+                                </p>
+                                
+                                
+                                                                       
+                            </div>
+                            <!--end sevencol -->
+                             
+                        </div>
+                        <!--end twelvecol -->
+                        
+                    </div>
+                    <!--end row -->
+                    
+                </div>
+                <!--end section_box -->
+                
+            </div>
+            <!--end section_wrapper -->
+                
+           
+            
+        </section>
+        <!--end about -->
+            
+        
+            
+        <!--begin blog -->
+        <section id="blog">
+                        
+            <!--begin call_to_action_grey_wrapper -->
+            <div class="call_to_action_grey_wrapper">
+                
+                <!--begin call_to_action_white -->
+                <div class="call_to_action_grey">
+                    <h3 class="left_fade">Produtos</h3>
+                    <div class="separator_wrapper bounce_fade">
+                        <div class="separator_first_circle">
+                            <div class="separator_second_circle">
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="right_fade">Trabalhamos com uma linha completa de produtos para arrefecimento e iluminação. Sempre com as melhores marcas do mercado!</h4>
+                </div>
+                <!--end call_to_action_white -->
+                    
+            </div>
+            <!--end call_to_action_grey_wrapper -->
+        
+            <!--begin section_wrapper -->
+            <div class="section_wrapper grey_bg">
+                
+                <!--begin section_box -->
+                <div class="section_box small_margins">
+                  
+                    <!--begin row -->
+                    <div class="row up_fade">
+                    
+                        <!--begin fourcol -->
+                        <div class="fourcol">
+                    
+                            <!--begin blog_item -->
+                            <div class="blog_item">
+                                    
+                                <!--begin zoom_photo -->
+                                <div class="zoom_photo">
+                                                            
+                                    <div class="view view-first">
+                                        
+                                            <img src="lib/images/modulos.jpg" alt="pic">
+                                            
+                                                <span class="zoom"></span>
+                                           
+                                        
+                                    </div>
+                                        
+                                </div>
+                                <!--end zoom_photo -->
+                                
+                                <!--begin blog_item_inner -->
+                                <div class="blog_item_inner">
+                                
+                                    <h3 class="blog_title"><a href="#">Condensadores</a></h3>
+                                                                                                       
+                                    <p></p>
+        
+                                    <a href="#orçamento" class="button_grey">Peça online</a>
+                                    
+                                   
+                                    
+                                </div>
+                                <!--end blog_item_inner -->
+                                
+                            </div>
+                            <!--end blog_item -->
+                            
+                        </div>
+                        <!--end fourcol -->
+                       
+                        <!--begin fourcol -->
+                        <div class="fourcol">
+                    
+                            <!--begin blog_item -->
+                            <div class="blog_item">
+                                    
+                                <!--begin zoom_photo -->
+                                <div class="zoom_photo">
+                                                            
+                                    <div class="view view-first">
+                                        
+                                            <img src="lib/images/viscofan2.jpg" alt="pic">
+                                           
+                                                <span class="zoom"></span>
+                                           
+                                        
+                                    </div>
+                                        
+                                </div>
+                                <!--end zoom_photo -->
+                                
+                                <!--begin blog_item_inner -->
+                                <div class="blog_item_inner">
+                                
+                                    <h3 class="blog_title"><a href="#">Eletroventiladores</a></h3>
+                                                                                                       
+                                    <p></p>
+        
+                                    <a href="#orçamento" class="button_grey">Peça online</a>
+                                    
+                                                                        
+                                </div>
+                                <!--end blog_item_inner -->
+                                
+                            </div>
+                            <!--end blog_item -->
+                            
+                        </div>
+                        <!--end fourcol -->
+                    
+                        <!--begin fourcol -->
+                        <div class="fourcol last">
+                    
+                            <!--begin blog_item -->
+                            <div class="blog_item">
+                                    
+                                <!--begin zoom_photo -->
+                                <div class="zoom_photo">
+                                                            
+                                    <div class="view view-first">
+                                       
+                                            <img src="lib/images/radiador.jpg" alt="pic">
+                                            
+                                                <span class="zoom"></span>
+                                            
+                                       
+                                    </div>
+                                        
+                                </div>
+                                <!--end zoom_photo -->
+                                
+                                <!--begin blog_item_inner -->
+                                <div class="blog_item_inner">
+                                
+                                    <h3 class="blog_title"><a href="#">Radiadores de água</a></h3>
+                                                                                                       
+                                    
+        
+                                    <a href="#orçamento" class="button_grey">Peça online</a>
+                                    
+                                                                        
+                                </div>
+                                <!--end blog_item_inner -->
+                                
+                            </div>
+                            <!--end blog_item -->
+                            
+                        </div>
+                        <!--end fourcol -->
+                    
+                    </div>
+                    <!--end row -->
+                    
+                    <!--begin row -->
+                    <div class="row up_fade">
+                    
+                        <!--begin fourcol -->
+                        <div class="fourcol">
+                    
+                            <!--begin blog_item -->
+                            <div class="blog_item">
+                                    
+                                <!--begin zoom_photo -->
+                                <div class="zoom_photo">
+                                                            
+                                    <div class="view view-first">
+                                        
+                                            <img src="lib/images/iluminacao.jpg" alt="pic">
+                                           
+                                                <span class="zoom"></span>
+                                            
+                                       
+                                    </div>
+                                        
+                                </div>
+                                <!--end zoom_photo -->
+                                
+                                <!--begin blog_item_inner -->
+                                <div class="blog_item_inner">
+                                
+                                    <h3 class="blog_title"><a href="#">Faróis e lanternas</a></h3>
+                                                             
+                                    <p></p>
+        
+                                    <a href="#orçamento" class="button_grey">Peça online</a>
+                                    
+                                    
+                                    
+                                </div>
+                                <!--end blog_item_inner -->
+                                
+                            </div>
+                            <!--end blog_item -->
+                            
+                        </div>
+                        <!--end fourcol -->
+                       
+                        <!--begin fourcol -->
+                        <div class="fourcol">
+                    
+                            <!--begin blog_item -->
+                            <div class="blog_item">
+                                    
+                                <!--begin zoom_photo -->
+                                <div class="zoom_photo">
+                                                            
+                                    <div class="view view-first">
+                                        
+                                            <img src="lib/images/filtros.jpg" alt="pic">
+                                            
+                                                <span class="zoom"></span>
+                                            
+                                       
+                                    </div>
+                                        
+                                </div>
+                                <!--end zoom_photo -->
+                                
+                                <!--begin blog_item_inner -->
+                                <div class="blog_item_inner">
+                                
+                                    <h3 class="blog_title"><a href="#">Filtros</a></h3>
+                                   
+                                    <p></p>
+        
+                                    <a href="#orçamento" class="button_grey">Peça online</a>
+                                    
+                                    
+                                    
+                                </div>
+                                <!--end blog_item_inner -->
+                                
+                            </div>
+                            <!--end blog_item -->
+                            
+                        </div>
+                        <!--end fourcol -->
+                    
+                        <!--begin fourcol -->
+                        <div class="fourcol last">
+                    
+                            <!--begin blog_item -->
+                            <div class="blog_item">
+                                    
+                                <!--begin zoom_photo -->
+                                <div class="zoom_photo">
+                                                            
+                                    <div class="view view-first">
+                                        
+                                            <img src="lib/images/aditivo.jpg" alt="pic">
+                                            
+                                                <span class="zoom"></span>
+                                            
+                                       
+                                    </div>
+                                        
+                                </div>
+                                <!--end zoom_photo -->
+                                
+                                <!--begin blog_item_inner -->
+                                <div class="blog_item_inner">
+                                
+                                    <h3 class="blog_title"><a href="#">Aditivos de arrefecimentos</a></h3>
+                                    
+                                    <p></p>
+        
+                                    <a href="#orçamento" class="button_grey">Peça online</a>
+                                    
+                                                                        
+                                </div>
+                                <!--end blog_item_inner -->
+                                
+                            </div>
+                            <!--end blog_item -->
+                            
+                        </div>
+                        <!--end fourcol -->
+                    
+                    </div>
+                    <!--end row -->
+                    
+                </div>
+                <!--end section_box -->
+                
+            </div>
+            <!--end section_wrapper -->
+            
+        </section>
+        <!--end blog -->
+
+        <!--begin contact -->
+        <section id="orçamento">
+                
+            <!--begin call_to_action_white_wrapper -->
+            <div class="call_to_action_white_wrapper">
+                
+                <!--begin call_to_action_dark -->
+                <div class="call_to_action_white">
+                    <h3 class="left_fade">Solicite seu orçamento online</h3>
+                    <div class="separator_wrapper bounce_fade">
+                        <div class="separator_first_circle">
+                            <div class="separator_second_circle_grey">
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="right_fade">É muito fácil! Basta preencher os dados do seu pedido e nós entraremos em contato!</h4>
+                </div>
+                <!--end call_to_action_dark -->
+                    
+            </div>
+            <!--end call_to_action_dark_wrapper -->
+        
+            <!--begin section_wrapper -->
+            <div class="section_wrapper white_bg">
+                
+                <!--begin section_box -->
+                <div class="section_box align_center">
+                  
+                    <!--begin row -->
+                    <div class="row bounce_fade">
+            
+                        <!--begin success message -->
+                        <p class="contact_success_box" style="display:none;">Nós recebemos seu pedido! Em breve entraremos em contato</p>
+                        <!--end success message -->
+                        
+                        <!--begin contact form -->
+                        <form id="contact-form-online" class="contact" action="contact2.php" method="post">
+                            <input class="contact-input-online white-input" type="text" required="" name="contact_names" placeholder="Nome*" />
+                            <input class="contact-input-online white-input" type="text" required="" name="contact_cpf" placeholder="CPF/CNPJ*" />
+                            <input class="contact-input-online white-input" type="email" required="" name="contact_email" placeholder="Email*" />
+                            <input class="contact-input-online white-input" type="text" required="" name="contact_telefone" placeholder="Telefone*" />
+                            <input class="contact-input-online white-input" type="text" required="" name="contact_local" placeholder="Local de entrega*" />
+                            <input class="contact-input-online white-input" type="text" required="" name="contact_produto" placeholder="Produto*" />
+                            <input class="contact-input-online white-input" type="text" required="" name="contact_veiculo" placeholder="Veículo/Modelo/Ano*" />
+                            <input type="submit" value="Enviar pedido" id="submit-button" class="contact-submit" />
+                        </form>
+                        <!--end contact form -->
+                
+                    </div>
+                    <!--end row -->
+                    
+                </div>
+                <!--end section_box -->
+                
+            </div>
+            <!--end section_wrapper -->
+            
+        </section>
+        <!--end contact -->
+
+         <!--begin onde estamos -->
+        <section id="local">
+            
+            <!--begin section_wrapper -->
+            <div class="section_wrapper">
+            <!--begin call_to_action_dark_wrapper -->
+            <div class="call_to_action_white_wrapper">
+                
+                <!--begin call_to_action_grey -->
+                <div class="call_to_action_white">
+                    <h3 class="left_fade">Visite nossa loja</h3>
+                    <div class="separator_wrapper bounce_fade">
+                        <div class="separator_first_circle">
+                            <div class="separator_second_circle_grey">
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="right_fade">Em breve a lemap estará em nova loja para melhor atendê-lo!</h4>
+                </div>
+                <!--end call_to_action_grey -->
+                    
+            </div>
+            <!--end call_to_action_dark_wrapper -->
+
+                
+                <!--begin section_box -->
+                <div class="section_box">
+
+                  
+                    <!--begin row -->
+                    <div class="row">
+                        
+                        <!--begin twelvecol -->
+                        <div class="twelvecol">
+                        
+                            <!--begin fivecol -->
+                            <center><div id="map-canvas">
+                                
+                                
+                                
+                            </div></center>
+                            <!--end fivecol -->
+                            
+                            <!--begin sevencol -->
+                            <div>
+                                
+                                                                
+                                <center><p style="align:center;">Est. Francisco da Cruz Nunes, 4901 <br>– Loja 204 – Itaipu/Niterói/RJ
+
+                                </p></center>
+                                
+                                
+                                                                       
+                            </div>
+                            <!--end sevencol -->
+                             
+                        </div>
+                        <!--end twelvecol -->
+                        
+                    </div>
+                    <!--end row -->
+                    
+                </div>
+                <!--end section_box -->
+                
+            </div>
+            <!--end section_wrapper -->
+                
+           
+            
+        </section>
+        <!--end onde estamos -->
+        
+        
+       
+        
+        <!--begin contact -->
+        <section id="contact">
+                
+            <!--begin call_to_action_dark_wrapper -->
+            <div class="call_to_action_dark_wrapper">
+                
+                <!--begin call_to_action_dark -->
+                <div class="call_to_action_dark">
+                    <h3 class="left_fade">Comentários e Dúvidas</h3>
+                    <div class="separator_wrapper bounce_fade">
+                        <div class="separator_first_circle">
+                            <div class="separator_second_circle_grey">
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="right_fade">Mande seu comentário ou dúvida que nossa equipe irá responder rapidamente. Seja uma dúvida de aplicação do produto, tempo de entrega ou o que precisar.
+                    </h4>
+                </div>
+                <!--end call_to_action_dark -->
+                    
+            </div>
+            <!--end call_to_action_dark_wrapper -->
+        
+            <!--begin section_wrapper -->
+            <div class="section_wrapper dark_bg">
+                
+                <!--begin section_box -->
+                <div class="section_box align_center">
+                  
+                    <!--begin row -->
+                    <div class="row bounce_fade">
+            
+                        <!--begin success message -->
+                        <p class="contact_success_box" style="display:none;">Nós recebemos sua mensagem! Em breve entraremos em contato.</p>
+                        <!--end success message -->
+                        
+                        <!--begin contact form -->
+                        <form id="contact-form" class="contact" action="contact.php" method="post">
+                            <input class="contact-input white-input" type="text" required="" name="contact_names" placeholder="Nome*" />
+                            <input class="contact-input white-input" type="email" required="" name="contact_email" placeholder="Email*" />
+                            <textarea class="contact-commnent white-input" rows="2" cols="20" name="contact_message" placeholder="Deixe sua mensagem"></textarea>
+                            <input type="submit" value="Enviar" id="submit-button" class="contact-submit" />
+                        </form>
+                        <!--end contact form -->
+                
+                    </div>
+                    <!--end row -->
+                    
+                </div>
+                <!--end section_box -->
+                
+            </div>
+            <!--end section_wrapper -->
+            
+        </section>
+        <!--end contact -->
+                 
+        <!--begin footer -->
+        <footer id="footer">
+            
+            <!--begin footer_box -->
+            <div id="footer_box">
+                
+                <p class="up_fade">Copyright © 2014 Lemap.</p> 
+                
+            </div>
+            <!--end footer_box -->
+        
+        </footer>
+        <!--end footer -->
+           
+    </div>
+    <!--! end of #container -->
+    
+    <!-- scripts concatenated and minified via ant build script-->
+    <script src="lib/js/modernizr-2.6.1.min.js"></script>
+    <script src="lib/js/plugins.js"></script>
+    <script src="lib/js/jquery.inview.js"></script>
+    <script src="lib/js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+    <script src="lib/js/retina.js"></script>
+    <script src="lib/js/script.js"></script>
+    
+    <!-- begin jquery.sticky script-->
+    <script type="text/javascript" src="lib/js/jquery.sticky.js"></script>
+		<script>
+        $(window).load(function(){
+          $("#header_wrapper").sticky({ topSpacing: 0 });
+        });
+    </script>
+    <!-- end jquery.sticky script-->
+  
+    <!-- begin menu scrollTo script-->
+    <script src="lib/js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript">
+		(function($){
+			$(document).ready(function() {	
+			/* This code is executed after the DOM has been completely loaded */
+				
+				$("#nav li a, a.scrool").click(function(e){
+		
+					var full_url = this.href;
+					var parts = full_url.split("#");
+					var trgt = parts[1];
+					var target_offset = $("#"+trgt).offset();
+					var target_top = target_offset.top;
+					
+					$('html,body').animate({scrollTop:target_top -69}, 1000);
+						return false;
+					
+				});
+						
+			});
+		})(jQuery);
+    </script>
+	<!-- end menu scrollTo script-->
+    
+    <!-- begin menu color script-->
+    <script src="lib/js/jquery.nav.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('#nav').onePageNav({
+		filter: ':not(.external)',
+		scrollThreshold: 0.25
+		});
+	});
+	</script>
+    <!-- end menu color script-->
+    
+    <!--begin shrink header script -->
+    <script>
+	$(function(){
+	 var shrinkHeader = 70;
+	  $(window).scroll(function() {
+		var scroll = getCurrentScroll();
+		  if ( scroll >= shrinkHeader ) {
+			   $('#header_wrapper').addClass('shrink');
+			}
+			else {
+				$('#header_wrapper').removeClass('shrink');
+			}
+	  });
+	function getCurrentScroll() {
+		return window.pageYOffset;
+		}
+	});
+	</script>
+    <!--end shrink header script -->
+    
+    <!-- begin owl.carousel script-->
+    <script src="lib/js/owl.carousel.js"></script>
+    <script>
+    $(document).ready(function($) {
+      $("#owl-example").owlCarousel();
+    });
+    $("body").data("page", "frontpage");
+    </script>
+    <!-- end owl.carousel script-->
+    
+    <!-- begin slider script-->
+    <script src="lib/js/responsiveslides.min.js"></script>
+  	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+	
+		  // Slideshow 4
+		  $("#slider4, #slider3").responsiveSlides({
+			auto: true,
+			pager: true,
+			nav: true,
+			pause: true,
+			speed: 500,
+			timeout: 5000,
+			namespace: "callbacks",
+			before: function () {
+			  $('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+			  $('.events').append("<li>after event fired.</li>");
+			}
+		  });
+	
+		});
+  	</script>
+    <!-- end slider script-->
+    
+    <!-- begin layerslider script-->
+    <script src="lib/js/greensock.js"></script>
+    <script src="lib/js/layerslider.transitions.js"></script>
+    <script src="lib/js/layerslider.kreaturamedia.jquery.js"></script>
+    
+    <script type="text/javascript">
+ 
+		// Running the code when the document is ready
+		$(document).ready(function(){
+	 
+			// Calling LayerSlider on the target element with adding custom slider options
+			$('#layerslider').layerSlider({
+				autoStart: true,
+				pauseOnHover: true,
+				navPrevNext: false,
+				navButtons: true,
+				thumbnailNavigation: false,
+			    autoPlayVideos: false,
+				firstLayer: 1,
+				skin: 'borderlesslight',
+				skinsPath: 'lib/layerslider/skins/'
+	 
+				// Please make sure that you didn't forget to add a comma to the line endings
+				// except the last line!
+			});
+		});
+	 
+	</script>
+        
+    <script type="text/javascript">
+     
+        // Running the code when the document is ready
+        $(document).ready(function(){
+     
+            // Calling LayerSlider on the target element
+            $('#layerslider2').layerSlider({
+     
+                autoStart: true,
+				pauseOnHover: true,
+				navPrevNext: false,
+				navButtons: true,
+				thumbnailNavigation: false,
+			    autoPlayVideos: false,
+				firstLayer: 1,
+				skin: 'borderlesslight',
+				skinsPath: 'lib/layerslider/skins/'
+	 
+				// Please make sure that you didn't forget to add a comma to the line endings
+				// except the last line!
+            });
+        });
+     
+    </script>
+    <!-- end layerslider script-->
+
+</body>
+</html>
