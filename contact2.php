@@ -1,8 +1,8 @@
 <?php
 
 $url = 'https://api.sendgrid.com/';
-$user = 'ricardobraga';
-$pass = 'r33562023';
+$user = 'douglas@282lemap.com.br';
+$pass = 'Ricardo22';
 
 $field_contact_name = $_POST['contact_name'];
 
@@ -10,13 +10,13 @@ $field_contact_email = $_POST['contact_email'];
 
 $field_contact_cpf = $_POST['contact_cpf'];
 
-$field_contact_telefone = $_POST['contact_telefone']
+$field_contact_telefone = $_POST['contact_telefone'];
 
-$field_contact_local = $_POST['contact_local']
+$field_contact_local = $_POST['contact_local'];
 
-$field_contact_produto = $_POST['contact_produto']
+$field_contact_produto = $_POST['contact_produto'];
 
-$field_contact_veiculo = $_POST['contact_veiculo']
+$field_contact_veiculo = $_POST['contact_veiculo'];
 
                            
                             
@@ -67,6 +67,8 @@ $response = curl_exec($session);
 curl_close($session);
 
 // print everything out
-//print_r($response);
+echo '<pre>';
+var_dump($session);
+echo '</pre>';
 
 ?>
