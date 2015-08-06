@@ -1,48 +1,69 @@
 <?php
+require 'lib/PHPMailer/class.phpmailer.php';
 
-$field_contact_name = $_POST['contact_name'];
+$PHPMailer = new PHPMailer();
 
-$field_contact_email = $_POST['contact_email'];
+$PHPMailer->IsSMTP();
+$PHPMailer->Host = "ssl://smtp.googlemail.com";
+$PHPMailer->SMTPAuth = true;
+//$PHPMailer->SMTPSecure = "tls";
+$PHPMailer->SMTPDebug = false;
+$PHPMailer->Port = "465";
+$PHPMailer->Username = "282lemap@gmail.com";
+$PHPMailer->Password = "Ricardo22";
+$PHPMailer->From = $_POST['contact_email'];
+$PHPMailer->FromName = $_POST['contact_names'];
 
-$field_contact_cpf = $_POST['contact_cpf'];
+$PHPMailer->SetFrom($PHPMailer->From, $PHPMailer->FromName);
+$PHPMailer->AddAddress('douglas@282lemap.com.br');
 
-$field_contact_telefone = $_POST['contact_telefone']
+$PHPMailer->IsHTML(true);
+$PHPMailer->CharSet = 'UTF-8';
 
-$field_contact_local = $_POST['contact_local']
+if(isset($_POST['contact_produto']))
+{
+    $PHPMailer->Subject = 'NOVO PEDIDO VIA SITE';
 
-$field_contact_produto = $_POST['contact_produto']
+    $message = 'Novo pedido no site, seguem os dados:
 
-$field_contact_veiculo = $_POST['contact_veiculo']
+        Nome: '.$_POST['contact_names'].'
+        CPF/CNPJ: '.$_POST['contact_cpf'].'
+        E-mail: '.$_POST['contact_email'].'
+        Telefone: '.$_POST['contact_telefone'].'
+        Local de entrega: '.$_POST['contact_local'].'
+        Produto: '.$_POST['contact_produto'].'
+        Veículo/Modelo/Ano: '.$_POST['contact_veiculo'];
+}
+else if(isset($_POST['contact_message']))
+{
+    $PHPMailer->Subject = 'NOVO CONTATO VIA SITE';
 
-                           
-                            
-$mail_to = 'douglas@282lemap.com.br';
+    $message = 
+        'Nome: '.$_POST['contact_names'].'
+        E-mail: '.$_POST['contact_email'].'
+        Mensagem: 
+        '.$_POST['contact_message'];
+}
 
-$subject = 'NOVO PEDIDO NO SITE'.$field_first_name;
+$PHPMailer->Body = nl2br($message);
+$PHPMailer->AltBody = $message;
 
-$body_message = 'From: '.$field_first_name."\n";
+$send = $PHPMailer->Send();
 
-$body_message .= 'E-mail: '.$field_email."\n";
+$PHPMailer->ClearAllRecipients();
+$PHPMailer->ClearAttachments();
 
-	
+//return $PHPMailer->ErrorInfo;
 
-$headers = 'From: '.$field_email."\r\n";
-
-$headers .= 'Reply-To: '.$field_email."\r\n";
-
-$mail_status = mail($mail_to, $subject, $body_message, $headers);
-
-
-if ($mail_status) { ?>
+if ($send) { ?>
 	<script language="javascript" type="text/javascript">
-		//alert('Thank you for the message. We will contact you shortly.');
+		alert('Agradecemos sua mensagem. Entraremos em contato em breve.');
 		window.location = 'index.html';
 	</script>
 <?php
 }
 else { ?>
 	<script language="javascript" type="text/javascript">
-		//alert('Message failed. Please, send an email to gordon@template-help.com');
 		window.location = 'index.html';
 	</script>
 <?php
