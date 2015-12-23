@@ -6,3 +6,5 @@ echo '<pre>';
 print_r("PHP User: ".$user."\r\n\r\n");
 print_r($hook);
 echo '</pre>';
+
+//testando hook
