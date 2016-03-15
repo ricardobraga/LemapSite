@@ -10,7 +10,7 @@ $PHPMailer->SMTPAuth = true;
 $PHPMailer->SMTPDebug = false;
 $PHPMailer->Port = "465";
 $PHPMailer->Username = "282lemap@gmail.com";
-$PHPMailer->Password = "Ricardo22";
+$PHPMailer->Password = "Ricardolindo24";
 $PHPMailer->From = $_POST['contact_email'];
 $PHPMailer->FromName = $_POST['contact_names'];
 
